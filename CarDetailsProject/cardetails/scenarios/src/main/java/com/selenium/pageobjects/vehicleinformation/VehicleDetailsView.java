@@ -41,7 +41,7 @@ public class VehicleDetailsView extends BasePage {
     private void extractVehicleDetailItem(Map<String, String> vehicle, final String itemText) {
 
         final String keyName = getKeyName(itemText);
-        SysUtils.log("Extracting vehicle details : " + itemText);
+        SysUtils.log("Retrieving car details : " + itemText);
         driver.findElement(listSummaryIdentifier)
               .findElements(listSummaryItemIdentifier)
               .stream()
